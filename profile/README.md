@@ -188,10 +188,10 @@ media(prefersColorScheme(DARK),
 
 ## Documentation
 
-- [luvml tutorial](prp/luvml_tutorial.md) — HTML generation
-- [luvs tutorial](prp/luvs_tutorial.md) — CSS generation
-- [luvue README](prp/luvue_README.md) — Vue.js integration
-- [Component patterns guide](prp/component-patterns-guide.md) — Architecture patterns
+- [luvml tutorial](https://github.com/luvml/luvml/luvml_tutorial.md) — HTML generation
+- [luvs tutorial](https://github.com/luvml/luvs/luvs_tutorial.md) — CSS generation
+- [luvue README](https://github.com/luvml/luvue/README.md) — Vue.js integration
+- [Component patterns guide](component-patterns-guide.md) — Architecture patterns
 
 ## License
 

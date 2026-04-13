@@ -8,8 +8,8 @@ Java code that mirrors the HTML/CSS it produces — with compile-time safety, ID
 var page = html(
     head(title("My App"), style(appStyles())),
     body(
-        div(id("app"), class_(container),
-            h1("Welcome"),
+        div(id("app"), class_(container),     //attributes here
+            h1("Welcome"),                    //node start
             p("Type-safe HTML in Java.")
         )
     )
@@ -81,10 +81,16 @@ enum Card implements CssClass {
 
     public static CssRules styles() {
         return rules(
-            card.____(background(WHITE), border_radius(px(8)),
-                      box_shadow(ZERO, px(2), px(8), rgba(0, 0, 0, 0.1))),
-            card_header.____(padding(rem(1)), font_weight(BOLD)),
-            card_body.____(padding(rem(1)))
+            card.____(  /*typically write similar to css  */
+                background(WHITE),
+                border_radius(px(8)),
+                box_shadow(ZERO, px(2),px(8), rgba(0, 0, 0, 0.1))
+            ),
+            card_header.____(
+                padding(rem(1)),
+                font_weight(BOLD)
+            ),
+            card_body.____(padding(rem(1))) /*smaller styles in same line*/
         );
     }
 }
@@ -122,8 +128,11 @@ public class TodoApp {
         return rules(
             $root.____(bg_color.def("#f5f5f5"), text_color.def("#333"), accent.def("#4a90d9")),
             $all.____(margin(ZERO), padding(ZERO), box_sizing(BORDER_BOX)),
-            body.____(font_family("system-ui", "sans-serif"),
-                      background_color(bg_color.ref()), color(text_color.ref())),
+            body.____(
+                font_family("system-ui", "sans-serif"),
+                background_color(bg_color.ref()),
+                color(text_color.ref())
+            ),
             app.____(max_width(px(600)), margin(rem(2), AUTO)),
             todo_list.____(display(FLEX), flex_direction(COLUMN), gap(rem(0.5))),
             todo_item.____(

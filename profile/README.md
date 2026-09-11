@@ -20,11 +20,14 @@ var page = html(
 
 | Library | Purpose | Maven |
 |---------|---------|-------|
-| **luvml** | HTML/XHTML generation | `io.github.luvml:luvml:2.0` |
-| **luvs** | CSS generation (394 properties) | `io.github.luvml:luvs:2.0` |
-| **luvue** | Vue.js directive integration | `io.github.luvml:luvue:2.0` |
+| **[luvml](https://github.com/luvml/luvml)** | HTML/XHTML generation | `io.github.luvml:luvml:2.0` |
+| **[luvs](https://github.com/luvml/luvs)** | CSS generation (394 properties) | `io.github.luvml:luvs:2.0` |
+| **[luvue](https://github.com/luvml/luvue)** | Vue.js directive integration | `io.github.luvml:luvue:2.0` |
+| **[luvml-jsoup](https://github.com/luvml/luvml-jsoup)** | Parse arbitrary HTML (JSoup) into luvml's typed DSL | `io.github.luvml:luvml-jsoup:2.0` |
+| **[luvdocx](https://github.com/luvml/luvdocx)** | DOCX generation, via docx4j | `io.github.luvml:luvdocx:1.0` |
+| **[luvjfx](https://github.com/luvml/luvjfx)** | JavaFX construction DSL | `io.github.luvml:luvjfx:1.0` |
 
-Adopt incrementally — start with luvml, add the others when you need them.
+Adopt incrementally — start with luvml, add the others when you need them. `luvx-base` and `luvx-char_sequence` are the shared foundation these all build on (pulled in transitively); `gen` and `luvjfx-gen` are the code generators used to maintain luvml/luvjfx themselves, not runtime dependencies.
 
 **Requires:** JDK 21+
 
@@ -197,11 +200,10 @@ media(prefersColorScheme(DARK),
 
 ## Documentation
 
-- [luvml tutorial](https://github.com/luvml/luvml/luvml_tutorial.md) — HTML generation
-- [luvs tutorial](https://github.com/luvml/luvs/luvs_tutorial.md) — CSS generation
-- [luvue README](https://github.com/luvml/luvue/README.md) — Vue.js integration
-- [Component patterns guide](component-patterns-guide.md) — Architecture patterns
+- [luvml tutorial](https://github.com/luvml/luvml/blob/main/luvml_tutorial.md) — HTML generation
+- [luvs tutorial](https://github.com/luvml/luvs/blob/main/luvs_tutorial.md) — CSS generation
+- [luvue README](https://github.com/luvml/luvue#readme) — Vue.js integration
 
 ## License
 
-[See LICENSE](LICENSE)
+Apache License 2.0 — see [LICENSE](LICENSE). Each repository under this org carries its own copy.

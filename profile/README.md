@@ -20,7 +20,7 @@ var page = html(
 
 | Library | Purpose | Maven |
 |---------|---------|-------|
-| **[luvml](https://github.com/luvml/luvml)** | HTML/XHTML generation | `io.github.luvml:luvml:2.0` |
+| **[luvml](https://github.com/luvml/luvml)** | HTML/XHTML generation | `io.github.luvml:luvml:2.1` |
 | **[luvs](https://github.com/luvml/luvs)** | CSS generation (394 properties) | `io.github.luvml:luvs:2.0` |
 | **[luvue](https://github.com/luvml/luvue)** | Vue.js directive integration | `io.github.luvml:luvue:2.0` |
 | **[luvml-jsoup](https://github.com/luvml/luvml-jsoup)** | Parse arbitrary HTML (JSoup) into luvml's typed DSL | `io.github.luvml:luvml-jsoup:2.0` |
@@ -37,7 +37,7 @@ Adopt incrementally — start with luvml, add the others when you need them. `lu
 <dependency>
     <groupId>io.github.luvml</groupId>
     <artifactId>luvml</artifactId>
-    <version>2.0</version>
+    <version>2.1</version>
 </dependency>
 ```
 
